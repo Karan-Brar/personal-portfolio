@@ -1,4 +1,6 @@
 import {
+  rrc,
+  aws,
   nitk,
   cluboard,
   cash_flow,
@@ -26,7 +28,16 @@ import {
   dennisivy,
   manipal,
   icon,
-  ethforall
+  ethforall,
+  promptshare,
+  bank,
+  sneaker,
+  todo,
+  chatroom,
+  androidlogo,
+  northfield,
+  webcraft,
+  innovation
 } from "../assets";
 
 import {
@@ -72,7 +83,28 @@ import {
   SiOpenai,
   SiGooglecloud,
   SiNextdotjs,
-  SiMicrosoftazure
+  SiMicrosoftazure,
+  SiMongodb,
+  SiAuth0,
+  SiVercel,
+  SiBlogger,
+  SiCsharp,
+  SiKotlin,
+  SiTypescript,
+  SiMongoose,
+  SiBlazor,
+  SiPostgresql,
+  SiDatadog,
+  SiVisualstudio,
+  SiPhpmyadmin,
+  SiAndroidstudio,
+  SiPhp,
+  SiSwagger,
+  SiSocketdotio,
+  SiNodedotjs,
+  SiSequelize,
+  SiSqlite,
+  SiMaterialdesign
 } from "react-icons/si";
 
 import {
@@ -88,10 +120,10 @@ import {
   FaGolang
 } from "react-icons/fa6";
 
-import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
+import { DiAndroid, DiAws, DiCss3, DiJava, DiJavascript, DiMsqlServer, DiPhp, DiPython, DiRuby } from "react-icons/di";
 
-export const resumeLink = "https://drive.google.com/file/d/1vkxyMDB5_KpMwt4QXFgT2aqdRizr8Czh/view?usp=sharing";
-export const repoLink = "https://github.com/mittal-parth/personal-portfolio";
+export const resumeLink = "https://drive.google.com/file/d/1iCCXeyyatd34pKyOBJg9iZlCEW4Eq53A/view?usp=drive_link";
+export const repoLink = "https://github.com/Karan-Brar/personal-portfolio";
 
 export const callToAction = "https://www.linkedin.com/in/karan-brar-web/";
 
@@ -104,10 +136,10 @@ export const navLinks = [
     id: "education",
     title: "Education",
   },
-  {
-    id: "achievements",
-    title: "Achievements",
-  },
+  // {
+  //   id: "achievements",
+  //   title: "Achievements",
+  // },
   {
     id: "projects",
     title: "Projects",
@@ -130,20 +162,21 @@ export const navLinks = [
 export const educationList = [
   {
     id: "education-1",
-    icon: nitk,
-    title: "National Institute of Technology Karnataka, Surathkal",
-    degree: "Bachelor of Technology",
-    duration: "December 2020 - May 2024",
-    content1: "Major: Electronics and Communication Engineering",
-    content2: "Minor: Information Technology",
+    icon: rrc,
+    title: "Red River College Polytechnic",
+    degree: "Business Information Technology Diploma",
+    duration: "September 2022 - Dec 2024",
+    content1:
+      "Completed a comprehensive software development curriculum, including web and mobile development with React, PHP, .NET (C#), and Java, along with foundational computer networking concepts.",
   },
   {
     id: "education-2",
-    icon: pba,
-    title: "Polkadot Blockchain Academy",
-    degree: "",
-    duration: "May 2024 - June 2024",
-    content1: "Graduated with a distinction in the fifth cohort of the Polkadot Blockchain Academy at the National University of Singapore.",
+    icon: aws,
+    title: "AWS Academy",
+    degree: "Cloud Foundations Certification",
+    duration: "Sep 2024 - Dec 2024",
+    content1:
+      "Obtained a certification in the AWS cloud foundations program, the curriculum invloved learning and practicing the usage of various AWS services like EC2 and Lambda Functions.",
   },
 ];
 
@@ -231,38 +264,38 @@ export const skills = [
     items: [
       {
         id: "pl-1",
-        icon: DiRuby,
-        name: "Ruby",
+        icon: DiJavascript,
+        name: "JavaScript",
       },
       {
         id: "pl-2",
-        icon: SiPython,
-        name: "Python",
+        icon: SiCsharp,
+        name: "C-Sharp",
       },
       {
         id: "pl-3",
-        icon: SiCplusplus,
-        name: "C++",
-      },
-      {
-        id: "pl-4",
-        icon: FaGolang,
-        name: "Go",
-      },
-      {
-        id: "pl-5",
-        icon: FaRust,
-        name: "Rust",
-      },
-      {
-        id: "pl-6",
         icon: DiJava,
         name: "Java",
       },
       {
+        id: "pl-4",
+        icon: SiTypescript,
+        name: "TypeScript",
+      },
+      {
+        id: "pl-5",
+        icon: DiPython,
+        name: "Python",
+      },
+      {
+        id: "pl-6",
+        icon: DiPhp,
+        name: "PHP",
+      },
+      {
         id: "pl-7",
-        icon: SiC,
-        name: "C",
+        icon: SiKotlin,
+        name: "Kotlin",
       },
       {
         id: "pl-8",
@@ -274,16 +307,6 @@ export const skills = [
         icon: DiCss3,
         name: "CSS",
       },
-      {
-        id: "pl-10",
-        icon: SiJavascript,
-        name: "JavaScript",
-      },
-      {
-        id: "pl-11",
-        icon: SiSolidity,
-        name: "Solidity",
-      }
     ],
   },
   {
@@ -291,18 +314,18 @@ export const skills = [
     items: [
       {
         id: "f-1",
-        icon: SiDjango,
-        name: "Django",
+        icon: SiDotnet,
+        name: ".NET",
       },
       {
         id: "f-2",
-        icon: SiRubyonrails,
-        name: "Ruby on Rails",
+        icon: SiReact,
+        name: "React.js",
       },
       {
         id: "f-3",
-        icon: SiReact,
-        name: "ReactJS",
+        icon: SiNextdotjs,
+        name: "Next.js",
       },
       {
         id: "f-4",
@@ -321,13 +344,18 @@ export const skills = [
       },
       {
         id: "f-7",
-        icon: SiGraphql,
-        name: "GraphQL",
+        icon: SiMongoose,
+        name: "Mongoose",
       },
       {
         id: "f-8",
         icon: SiDotnet,
         name: ".NET",
+      },
+      {
+        id: "f-8",
+        icon: SiBlazor,
+        name: "Blazor",
       },
     ],
   },
@@ -336,18 +364,18 @@ export const skills = [
     items: [
       {
         id: "t-1",
-        icon: SiMicrosoftazure,
-        name: "Azure",
+        icon: DiAws,
+        name: "AWS",
       },
       {
         id: "t-2",
-        icon: SiMysql,
-        name: "MySQL",
+        icon: SiPostgresql,
+        name: "PostgreSQL",
       },
       {
         id: "t-3",
-        icon: SiPostman,
-        name: "Postman",
+        icon: SiMongodb,
+        name: "MongoDB",
       },
       {
         id: "t-4",
@@ -366,18 +394,33 @@ export const skills = [
       },
       {
         id: "t-7",
-        icon: AiOutlineGitlab,
-        name: "Gitlab",
+        icon: SiAndroidstudio,
+        name: "Android Studio",
       },
       {
         id: "t-8",
-        icon: SiNetlify,
-        name: "Netlify",
+        icon: SiVercel,
+        name: "Vercel",
       },
       {
         id: "t-9",
-        icon: SiVite,
-        name: "ViteJS",
+        icon: SiDatadog,
+        name: "Data Dog",
+      },
+      {
+        id: "t-9",
+        icon: SiVisualstudio,
+        name: "Visual Studio",
+      },
+      {
+        id: "t-10",
+        icon: SiPhpmyadmin,
+        name: "PHPMyAdmin",
+      },
+      {
+        id: "t-11",
+        icon: SiPostman,
+        name: "Postman",
       },
     ],
   },
@@ -386,435 +429,268 @@ export const skills = [
 // Add your current/past professional work experience here
 export const experiences = [
   {
-    organisation: "Oracle, India",
-    logo: oracle,
-    link: "https://www.oracle.com/in/",
+    organisation: "Northfield IT",
+    logo: northfield,
+    link: "https://www.northfieldit.com/",
     positions: [
       {
-        title: "Member of Technical Staff - 1",
-        duration: "Jul 2024 - Present",
+        title: "Junior DevOps Engineer (Application Support)",
+        duration: "Jan 2023 - Sep 2023",
         content: [
           {
-            text: "Working in the DBaaS Control Plane team in the Database Unit.",
-            link: "",
-          },
-        ],
-      },
-      {
-        title: "Member of Technical Staff Intern",
-        duration: "May 2023 - Jul 2023",
-        content: [
-          {
-            text: "Worked with the Exadata Cloud@Customer team in the Database Unit.",
+            text: "Collaborated with NFL Clubs to troubleshoot website and SEO issues related to text content, design issues, audio streaming issues, and webpage layouts. Used Pocket CMS to resolve 10+ issues during NFL games.",
             link: "",
           },
           {
-            text: "Wrote APIs in Java to help gracefully migrate a running ExaC@C infrastructure to a new region in the case of a region failure",
-            link: ""
-          }
+            text: "Enhanced the frontend of an internal monitoring tool by making a UI improvement that allowed users to view the online/offline/away status of other users, their team affiliations, and whether they were on time-off, using JavaScript and HTML templating languages.",
+            link: "",
+          },
+          {
+            text: "Managed over 500 support tickets through JIRA and resolved infrastructure issues using Datadog and Prometheus.",
+            link: "",
+          },
+          {
+            text: "Assisted with over 100 access management tasks for multiple services, including LDAP Open Server, Slack, AWS etc., ensuring smooth operations by completing access requests in a timely manner",
+            link: "",
+          },
         ],
       },
     ],
   },
   {
-    organisation: "Averlon",
-    logo: averlon,
-    link: "https://averlon.ai/",
+    organisation: "Webcraft",
+    logo: webcraft,
+    link: "https://www.instagram.com/webcraft.ca/",
     positions: [
       {
-        title: "Software Developer Intern",
-        duration: "Sept 2023 - Feb 2024",
+        title: "Freelancer and Full-Stack Web Developer",
+        duration: "July 2023 - May 2024",
         content: [
           {
-            text: "Added support for the discoverability of Microsoft Azure assets utilising Go and Gremlin.",
-            link: ""
-          },
-          {
-            text: "Extended support for Azure for reachability analysis of assets for cloud security posture management.",
-            link: ""
-          }
-        ],
-      },
-    ],
-  },
-  {
-    organisation: "IRIS, NITK",
-    logo: iris,
-    link: "https://iris.nitk.ac.in/about_us",
-    positions: [
-      {
-        title: "Tech Lead",
-        duration: "Apr 2023 - Apr 2024",
-        content: [
-          {
-            text: "Led a team of 40+ students in digitizing administrative, academic and alumni-related work.",
+            text: "Founded and led a digital solutions agency specializing in responsive web applications and modern digital experiences for diverse business clients",
             link: "",
           },
           {
-            text: "Managed all phases of Software Development Life Cycle (SDLC) for 15+ modules.",
+            text: "Developed cross-platform web solutions using both no-code platforms (Bubble) and professional development frameworks, including React.js and Next.js",
             link: "",
           },
-        ],
-      },
-      {
-        title: "Web Lead",
-        duration: "Apr 2022 - Present",
-        content: [
           {
-            text: "Managed a team of 6 student developers while also overlooking multiple modules.",
+            text: "Implemented scalable web architectures with Vercel deployment, focusing on intuitive UI/UX design and delivering end-to-end digital products",
             link: "",
           },
-        ],
-      },
-      {
-        title: "Web Developer",
-        duration: "Nov 2021 - Apr 2022",
-        content: [
           {
-            text: "Added Conditional Fields support to the Forms Module.",
-            link: "",
-          },
-        ],
-      },
-      {
-        title: "Web Developer Intern",
-        duration: "Jun 2021 - Oct 2021",
-        content: [
-          {
-            text: "Developed a multi-role approval flow system to facilitate data collection and display on the Institute's Department Websites.",
+            text: "Managed full software development lifecycle from initial client consultation through solution design, development, and deployment, ensuring high-quality technical outcomes and client satisfaction",
             link: "",
           },
         ],
       },
     ],
-  }
+  },
 ];
 
 // Add information about all the projects to be listed out in your portfolio
 export const projects = [
   {
     id: "project-1",
-    title: "Comicify.ai",
-    github: "https://github.com/ayush4345/Comicify.ai",
-    link: "https://comicify-ai.vercel.app/",
-    image: comicify_ai,
+    title: "PromptShare",
+    github: "https://github.com/Karan-Brar/prompt-share",
+    link: "https://prompt-share-nine.vercel.app/",
+    image: promptshare,
     content:
-      "Convert any academic/news/boring text into cool comic strips using GPT-3.5 and Stable Diffusion!",
+      "Share prompts that lead to interesting answers from AI Models like ChatGPT with the world! Implements Google OAuth for easy log in/log out functionality along with data persistence in a non-relational database.",
     stack: [
       {
         id: "icon-1",
         icon: SiReact,
-        name: "React"
+        name: "React",
       },
       {
         id: "icon-2",
         icon: SiTailwindcss,
-        name: "TailwindCSS"
+        name: "TailwindCSS",
       },
       {
         id: "icon-3",
-        icon: SiOpenai,
-        name: "OpenAI"
+        icon: SiNextdotjs,
+        name: "NextJS",
       },
       {
         id: "icon-4",
-        icon: SiGooglecloud,
-        name: "Google Cloud Platform"
+        icon: SiMongodb,
+        name: "MongoDB",
       },
       {
         id: "icon-5",
-        icon: SiFlask,
-        name: "Flask"
+        icon: SiAuth0,
+        name: "Google OAuth",
+      },
+      {
+        id: "icon-6",
+        icon: SiVercel,
+        name: "Vercel",
       },
     ],
   },
   {
     id: "project-2",
-    title: "GreenTrust",
-    github: "https://github.com/mittal-parth/GreenTrust",
-    link: "https://green-trust-fantom.netlify.app/",
-    image: greentrust,
+    title: "Save On Rates",
+    link: "https://www.saveonrates.ca/",
+    image: bank,
     content:
-      "Winning project at 3 hackathons, GreenTrust offers a novel solution for obtaining certification in organic farming by organizing credible and decentralized Participatory Guarantee Systems (PGSs).",
+      "Made for a local mortgage brokering company, integrates the Twilio E-mail API to send e-mails to mortgage agents upon form submissions from clients. Invloves a highly user-friendly design by pushing boundaries of state management in React.",
     stack: [
       {
         id: "icon-1",
         icon: SiReact,
-        name: "React"
+        name: "React",
       },
       {
         id: "icon-2",
         icon: SiTailwindcss,
-        name: "TailwindCSS"
+        name: "TailwindCSS",
       },
       {
         id: "icon-3",
         icon: SiNextdotjs,
-        name: "Next.js"
+        name: "Next.js",
       },
       {
         id: "icon-4",
-        icon: SiIpfs,
-        name: "IPFS"
+        icon: SiTwilio,
+        name: "Twillio E-mail API",
       },
       {
         id: "icon-5",
-        icon: SiSolidity,
-        name: "Solidity"
-      },
-      {
-        id: "icon-6",
-        icon: IoIosNotificationsOutline,
-        name: "Push Protocol"
+        icon: SiVercel,
+        name: "Vercel",
       },
     ],
   },
   {
     id: "project-3",
-    title: "ChargeSwap",
-    github: "https://github.com/CommanderAstern/ChargeSwap",
-    link: "https://devfolio.co/projects/chargeswap-3527",
-    image: chargeswap,
+    title: "IceFeet",
+    github: "https://github.com/Karan-Brar/sneaker-journal",
+    image: sneaker,
     content:
-      "A Blockchain-based EV-Battery swapping solution - winning project at ETHIndia'22, the world's largest Ethereum Hackathon",
+      "A website blog that allows users to share their interesting sneaker finds, users can create accounts, view what others have shared and even comment on their opinions on the various sneakers. Implements password hashing and sessions with PHP to keep the website secure.",
     stack: [
       {
         id: "icon-1",
-        icon: SiReact,
-        name: "React"
+        icon: SiPhp,
+        name: "PHP",
       },
       {
         id: "icon-3",
-        icon: SiWeb3Dotjs,
-        name: "Web3.js"
+        icon: SiBootstrap,
+        name: "Bootstrap",
       },
       {
         id: "icon-4",
-        icon: SiSolidity,
-        name: "Solidity"
+        icon: SiPhpmyadmin,
+        name: "PhpMyAdmin",
       },
       {
         id: "icon-5",
-        icon: FaHardHat,
-        name: "HardHat"
-      },
-      {
-        id: "icon-6",
-        icon: SiIpfs,
-        name: "IPFS"
-      },
-      {
-        id: "icon-7",
-        icon: SiArduino,
-        name: "Arduino"
-      },
-      {
-        id: "icon-8",
-        icon: IoIosNotificationsOutline,
-        name: "Push Protocol"
+        icon: SiMysql,
+        name: "MySQL",
       },
     ],
   },
   {
     id: "project-4",
-    title: "Samsotech Table Management System",
-    github: "",
-    link: "https://www.linkedin.com/posts/mittal-parth_technologysolutions-softwaredevelopment-technology-activity-6994915645066809344-WnMY?utm_source=share&utm_medium=member_desktop",
-    image: placeicon,
+    title: "To-do list REST API",
+    github: "https://github.com/Karan-Brar/TodoApi-ASP.NET",
+    image: todo,
     content:
-      "Restaurant, Place, Table and realtime Reservation Management with Multi-Tenant Architecture, RBAC, SMS and Email integration for Samsotech International",
+      "A clean and simplistic REST API built with .NET Core that communicates with a PostgreSQL database allowing users to perform CRUD operation on typical items in a to-do list. This can serve as a great base for anybody looking to develop a to-do list app.",
     stack: [
       {
         id: "icon-1",
         icon: SiDotnet,
-        name: "Dot Net Core MVC 6"
+        name: "Dot Net Core Web API",
       },
       {
         id: "icon-2",
-        icon: SiBootstrap,
-        name: "Bootstrap"
+        icon: SiPostgresql,
+        name: "PostgreSQL",
       },
       {
         id: "icon-3",
-        icon: DiMsqlServer,
-        name: "MS Sql Server"
-      },
-      {
-        id: "icon-4",
-        icon: SiJquery,
-        name: "jQuery"
-      },
-      {
-        id: "icon-5",
-        icon: SiTwilio,
-        name: "Twillio"
+        icon: SiSwagger,
+        name: "Swagger",
       },
     ],
   },
   {
     id: "project-5",
-    title: "Non-Teaching Recruitment Portal, NITK",
-    github: "",
-    link: "http://recruitment.nitk.ac.in/",
-    image: recruitment,
+    title: "Mercury Chatrooms",
+    github: "https://github.com/Karan-Brar/Mercury-ChatRooms",
+    link: "https://mercury-chatrooms.onrender.com/",
+    image: chatroom,
     content:
-      "The official recruitment portal for non-teaching staff with an admin panel, email notifications and payment integration.",
+      "A discord-like application that allows users from anywhere in world join a chatroom in a topic that interests them and share their views with others in the chatroom in real-time! Heavily uses websockets to obtain real-time functionality.",
     stack: [
       {
         id: "icon-1",
-        icon: SiRubyonrails,
-        name: "Ruby on Rails"
+        icon: SiJavascript,
+        name: "JavaScript",
       },
       {
         id: "icon-2",
-        icon: SiTailwindcss,
-        name: "TailwindCSS"
+        icon: SiNodedotjs,
+        name: "Node.js",
       },
       {
         id: "icon-3",
-        icon: SiJquery,
-        name: "jQuery"
+        icon: SiSocketdotio,
+        name: "Socket.IO Websockets",
+      },
+      {
+        id: "icon-4",
+        icon: SiPostgresql,
+        name: "PostgreSQL",
+      },
+      {
+        id: "icon-5",
+        icon: SiSequelize,
+        name: "Sequelize",
       },
     ],
   },
   {
     id: "project-6",
-    title: "Career Development Centre, NITK Website",
-    github: "",
-    link: "http://cdc.nitk.ac.in/",
-    image: cdc,
+    title: "Android Utility App",
+    github: "https://github.com/Karan-Brar/UtilityApp",
+    image: androidlogo,
     content:
-      "The official website of CDC, NITK with a custom built CMS.",
+      "Utility App made for android, working as a swiss knife allowing you to take notes with the added availability of viewing weather forecasts. Utilizes all the essentials of android development like data persistence, Material UI, External API Usage etc.",
     stack: [
       {
         id: "icon-1",
-        icon: SiRubyonrails,
-        name: "Ruby on Rails"
+        icon: SiKotlin,
+        name: "Kotlin",
       },
       {
         id: "icon-2",
-        icon: SiBootstrap,
-        name: "Bootstrap"
+        icon: SiAndroidstudio,
+        name: "Android Studio",
       },
       {
         id: "icon-3",
-        icon: SiJavascript,
-        name: "JavaScript"
+        icon: SiSqlite,
+        name: "SQLite",
+      },
+      {
+        id: "icon-4",
+        icon: SiMaterialdesign,
+        name: "Material UI",
       },
     ],
   },
   {
     id: "project-7",
-    title: "Huntly",
-    github: "",
-    link: "https://devfolio.co/projects/huntly-b5a9",
-    image: huntly,
-    content:
-      "A cross-platform mobile application that brings people closer to the physical environment and forms meaningful connections by organising real-world Treasure Hunts for free and winning rewards. The app uses machine learning to match users and form teams of like-minded people.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiDjango,
-        name: "Django Rest Framework"
-      },
-      {
-        id: "icon-2",
-        icon: SiFlutter,
-        name: "Flutter"
-      },
-      {
-        id: "icon-3",
-        icon: SiReplit,
-        name: "Replit"
-      },
-      {
-        id: "icon-4",
-        icon: SiFlask,
-        name: "Flask"
-      },
-      {
-        id: "icon-5",
-        icon: SiFigma,
-        name: "Figma"
-      },
-      {
-        id: "icon-6",
-        icon: SiGooglemaps,
-        name: "Google Maps API"
-      },
-    ],
-  },
-  {
-    id: "project-8",
-    title: "Cluboard",
-    github: "https://github.com/mittal-parth/Cluboard",
-    link: "",
-    image: cluboard,
-    content:
-      "A full-stack web application to facilitate sharing resources in college clubs with email notifications, requests and ticketing system, and analytical dashboards.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiDjango,
-        name: "Django"
-      },
-      {
-        id: "icon-2",
-        icon: AiFillHtml5,
-        name: "HTML"
-      },
-      {
-        id: "icon-3",
-        icon: DiCss3,
-        name: "CSS"
-      },
-      {
-        id: "icon-4",
-        icon: SiJavascript,
-        name: "JavaScript"
-      },
-      {
-        id: "icon-5",
-        icon: SiBootstrap,
-        name: "Bootstrap"
-      },
-      {
-        id: "icon-6",
-        icon: SiChartdotjs,
-        name: "Chart.js"
-      },
-    ],
-  },
-  {
-    id: "project-9",
-    title: "Cash Flow Minimiser",
-    github: "https://github.com/mittal-parth/Cash-Flow-Minmiser",
-    link: "https://minimise-cash-flow.netlify.app/",
-    image: cash_flow,
-    content:
-      "A React application to help users visualise and minimise cash flow among multiple transactions.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiReact,
-        name: "React"
-      },
-      {
-        id: "icon-2",
-        icon: AiFillHtml5,
-        name: "HTML"
-      },
-      {
-        id: "icon-3",
-        icon: DiCss3,
-        name: "CSS"
-      }
-    ],
-  },
-  {
-    id: "project-10",
     title: "Portfolio",
-    github: "https://github.com/mittal-parth/personal-portfolio",
+    github: "https://github.com/Karan-Brar/personal-portfolio",
     link: "https://parthmittal.netlify.app/",
     image: portfolio,
     content: "Personal portfolio website with React and Tailwind CSS.",
@@ -822,17 +698,17 @@ export const projects = [
       {
         id: "icon-1",
         icon: SiReact,
-        name: "React"
+        name: "React",
       },
       {
         id: "icon-2",
         icon: SiTailwindcss,
-        name: "Tailwind CSS"
+        name: "Tailwind CSS",
       },
       {
         id: "icon-3",
         icon: AiFillHtml5,
-        name: "HTML"
+        name: "HTML",
       },
     ],
   },
@@ -928,84 +804,45 @@ export const stats = [
 export const extraCurricular = [
   {
     id: 1,
-    organisation: "Devfolio",
-    title: "UniDAO Lead",
-    duration: "December 2021 - Present",
+    organisation: "Directions Conference",
+    title: "Wordpress Developer",
+    duration: "December 2022",
     content: [
       {
-        text: "Selected among 5 students across the country to lead the initiative and grow the culture of Blockchain and Ethereum, powered by Devfolio.",
-        link: "https://www.linkedin.com/feed/update/urn:li:activity:7097977924686942209/",
+        text: "Collaborated with cross-functional team of instructors, project management, and technology students.",
+        link: "",
       },
       {
-        text: "Led a cohort of 37 selected students over 6 weeks to learn and build in the Ethereum ecosystem.",
-        link: "https://www.linkedin.com/feed/update/urn:li:activity:7095310520282480641/",
+        text: "Supported annual RRC Polytech conference connecting business students with industry professionals.",
+        link: "",
+      },
+      {
+        text: "Integrated social media feeds from conference's social pages.",
+        link: "",
       },
     ],
-    logo: devfolio,
+    logo: rrc,
   },
   {
     id: 2,
-    organisation: "Google Developer Student Club, NITK",
-    title: "Co-Chair",
-    duration: "December 2021 - Present",
+    organisation: "Sprint To Innovate",
+    title: "Member - Team Big Boolean",
+    duration: "November 2021",
     content: [
       {
-        text: "Started HackClub to promote and spread the culture of Hackathons in the college. 20+ hackathons particiaptions, 15+ wins over the year.",
+        text: "Participated in 5-student team for business challenge hackathon",
+        link: "https://www.linkedin.com/posts/karan-brar-web_bigboolean-final-pitch-activity-6919121095795060736-DFZr?utm_source=share&utm_medium=member_desktop",
+      },
+      {
+        text: "Developed prototype solution for Neo Financial (Canadian financial institution)",
         link: "",
       },
       {
-        text: "Co-designed and developed the official website of Incident, NITK with 15K+ visitors",
-        link: "https://incident.nitk.ac.in/",
-      },
-    ],
-    logo: gdsc,
-  },
-  {
-    id: 3,
-    organisation: "Genesis, NITK",
-    title: "Competitions Head",
-    duration: "Sep 2021 - Present",
-    content: [
-      {
-        text: "Qualified for the nationals of Indian Hip Hop Dance Championship",
-        link: "",
-      },
-      {
-        text: "Won 7 inter-college solo dance competitions",
+        text: "Designed and delivered pitch presenting potential benefits of the prototype to judging panel",
         link: "",
       },
     ],
-    logo: genesis,
-  },
-  {
-    id: 4,
-    organisation: "IRIS, NITK",
-    title: "Tutor",
-    duration: "Jan 2022 - Jan 2022",
-    content: [
-      {
-        text: "Mentored 150+ students in a month-long Web Development and Ruby on Rails Bootcamp",
-        link: "https://github.com/IRIS-NITK/IRIS-RoR-Bootcamp-2021",
-      },
-    ],
-    logo: iris,
-  },
-  {
-    id: 5,
-    organisation: "E-Cell, NITK",
-    title: "Executive Member",
-    duration: "Sep 2021 - Apr 2022",
-    content: [
-      {
-        text: "Organised the season 3 of the E-Cell NITK Podcast",
-        link: "https://www.youtube.com/watch?v=uA-Yrk6bVDc",
-      },
-      {
-        text: "Member of the Sponsorship and E-Talks team for E-Summit'22",
-        link: "",
-      },
-    ],
-    logo: ecell,
+    logo: innovation,
   },
 ];
 
@@ -1014,40 +851,40 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: AiFillLinkedin,
-    link: "https://www.linkedin.com/in/mittal-parth",
+    link: "https://www.linkedin.com/in/karan-brar-web",
   },
   {
     id: "social-media-2",
     icon: AiFillGithub,
-    link: "https://www.github.com/mittal-parth",
+    link: "https://www.github.com/karan-brar",
   },
   {
     id: "social-media-3",
     icon: AiFillMail,
-    link: "mailto:mittalparth22@gmail.com",
+    link: "mailto:brarkaran938@gmail.com",
   },
   {
     id: "social-media-4",
     icon: AiOutlineTwitter,
-    link: "https://www.twitter.com/mittalparth_",
-  },
-  {
-    id: "social-media-5",
-    icon: AiFillInstagram,
-    link: "https://www.instagram.com/mittalparth_",
+    link: "https://www.twitter.com/_KaranBrar_",
   },
 ];
 
 // Your professional summary
 export const aboutMe = {
-    name: "Parth Mittal",
-    githubUsername: 'mittal-parth',
-    tagLine: "MTS-1 @Oracle | ex-SDE Intern @Averlon | ex-Tech Lead @IRIS,NITK | ETHIndia'22 Winner | NITK'24",
-    intro: "Software Developer from India who is either busy improving his craft or pondering over the next big idea."
-}
+  name: "Karan Brar",
+  githubUsername: "Karan-Brar",
+  tagLine: "Full Stack Developer | .NET and React Enthusisast | RRC'24",
+  intro:
+    "A Canadian software developer transforming ideas into code, continuously learning and evolving with every project.",
+};
 
 // The maximum number of PRs to be displayed in the Open Source Contributions section.
 export const itemsToFetch = 20;
 
 // Add names of GitHub repos you'd like to display open source contributions from in the 'org/repo' format. 
-export const includedRepos = ['publiclab/plots2', 'zulip/zulip', 'paritytech/polkadot-sdk'];
+export const includedRepos = [
+  "mittal-parth/personal-portfolio",
+  "firstcontributions/first-contributions",
+  "Qu-Ack/opensource_starter",
+];

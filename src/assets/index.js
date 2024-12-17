@@ -1,5 +1,5 @@
-import parthmittal from "./parth.svg";
-import profilePic from "./profile-pic.jpg";
+import parthmittal from "./portfolio-logo.png";
+import profilePic from "./profilepic.jpeg";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
@@ -47,6 +47,16 @@ import dennisivy from "./dennisivy.png";
 import manipal from "./manipal.png";
 import icon from "./icon.jpg";
 import ethforall from "./ethforall.png";
+import rrc from "./rrc.png";
+import aws from "./aws.png";
+import promptshare from "./promptshare.svg";
+import saveonrates from "./save-on-rates.png";
+import sneaker from "./sneaker.jpg";
+import chatroom from "./chatroom.jpg"
+import androidlogo from "./android-logo.jpg"
+import northfield from "./northfield.png"
+import webcraft from "./webcraft-logo.png"
+import innovation from "./innovation.jpg"
 
 export {
   quotes,
@@ -97,5 +107,15 @@ export {
   dennisivy,
   manipal,
   icon,
-  ethforall
+  ethforall,
+  rrc,
+  aws,
+  promptshare,
+  saveonrates,
+  sneaker,
+  chatroom,
+  androidlogo,
+  northfield,
+  webcraft,
+  innovation
 };
