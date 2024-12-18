@@ -122,7 +122,8 @@ import {
 
 import { DiAndroid, DiAws, DiCss3, DiJava, DiJavascript, DiMsqlServer, DiPhp, DiPython, DiRuby } from "react-icons/di";
 
-export const resumeLink = "https://drive.google.com/file/d/1iCCXeyyatd34pKyOBJg9iZlCEW4Eq53A/view?usp=drive_link";
+export const resumeLink =
+  "https://drive.google.com/file/d/1BftEaShyx6Bpn5_FeNZ4Y8VJo1qt_iBC/view?usp=sharing";
 export const repoLink = "https://github.com/Karan-Brar/personal-portfolio";
 
 export const callToAction = "https://www.linkedin.com/in/karan-brar-web/";
