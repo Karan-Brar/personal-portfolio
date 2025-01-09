@@ -1,27 +1,7 @@
 import {
   rrc,
   aws,
-  nitk,
-  cluboard,
-  cash_flow,
-  gdsc,
-  iris,
-  ecell,
-  genesis,
   portfolio,
-  publiclab,
-  zulip,
-  cdc,
-  chargeswap,
-  placeicon,
-  recruitment,
-  huntly,
-  oracle,
-  comicify_ai,
-  greentrust,
-  averlon,
-  devfolio,
-  pba,
   ethglobal,
   polkadot,
   lightspeed,
@@ -37,7 +17,8 @@ import {
   androidlogo,
   northfield,
   webcraft,
-  innovation
+  innovation,
+  location
 } from "../assets";
 
 import {
@@ -66,22 +47,10 @@ import {
   SiPostman,
   SiGit,
   SiMysql,
-  SiSolidity,
-  SiNetlify,
-  SiChartdotjs,
-  SiVite,
-  SiArduino,
-  SiWeb3Dotjs,
-  SiIpfs,
   SiDotnet,
   SiTwilio,
-  SiFlutter,
-  SiReplit,
-  SiFlask,
-  SiFigma,
   SiGooglemaps,
   SiOpenai,
-  SiGooglecloud,
   SiNextdotjs,
   SiMicrosoftazure,
   SiMongodb,
@@ -104,17 +73,9 @@ import {
   SiNodedotjs,
   SiSequelize,
   SiSqlite,
-  SiMaterialdesign
+  SiMaterialdesign,
+  SiLeaflet
 } from "react-icons/si";
-
-import {
-  FaHardHat,
-  FaRust
-} from "react-icons/fa";
-
-import {
-  IoIosNotificationsOutline
-} from "react-icons/io";
 
 import {
   FaGolang
@@ -493,6 +454,36 @@ export const experiences = [
 export const projects = [
   {
     id: "project-1",
+    title: "Traffic Heatmap Visualizer",
+    github: "https://github.com/Karan-Brar/traffic-monitoring-dashboard",
+    image: location,
+    content:
+      "This is a simplistic React Application that calls upon a C# REST API to get real-time traffic-data for a 120 major points in the city and visualize the traffic data in the form of a heatmap.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React",
+      },
+      {
+        id: "icon-2",
+        icon: SiLeaflet,
+        name: "Leaflet",
+      },
+      {
+        id: "icon-3",
+        icon: SiCsharp,
+        name: "C-Sharp",
+      },
+      {
+        id: "icon-4",
+        icon: SiGooglemaps,
+        name: "MongoDB",
+      },
+    ],
+  },
+  {
+    id: "project-2",
     title: "PromptShare",
     github: "https://github.com/Karan-Brar/prompt-share",
     link: "https://prompt-share-nine.vercel.app/",
@@ -533,7 +524,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-2",
+    id: "project-3",
     title: "Save On Rates",
     link: "https://www.saveonrates.ca/",
     image: bank,
@@ -568,7 +559,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-3",
+    id: "project-4",
     title: "IceFeet",
     github: "https://github.com/Karan-Brar/sneaker-journal",
     image: sneaker,
@@ -598,7 +589,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-4",
+    id: "project-5",
     title: "To-do list REST API",
     github: "https://github.com/Karan-Brar/TodoApi-ASP.NET",
     image: todo,
@@ -607,8 +598,8 @@ export const projects = [
     stack: [
       {
         id: "icon-1",
-        icon: SiDotnet,
-        name: "Dot Net Core Web API",
+        icon: SiCsharp,
+        name: "C-Sharp",
       },
       {
         id: "icon-2",
@@ -623,7 +614,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-5",
+    id: "project-6",
     title: "Mercury Chatrooms",
     github: "https://github.com/Karan-Brar/Mercury-ChatRooms",
     link: "https://mercury-chatrooms.onrender.com/",
@@ -659,7 +650,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-6",
+    id: "project-7",
     title: "Android Utility App",
     github: "https://github.com/Karan-Brar/UtilityApp",
     image: androidlogo,
@@ -689,7 +680,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-7",
+    id: "project-8",
     title: "Portfolio",
     github: "https://github.com/Karan-Brar/personal-portfolio",
     link: "https://parthmittal.netlify.app/",

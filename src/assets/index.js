@@ -57,6 +57,7 @@ import androidlogo from "./android-logo.jpg"
 import northfield from "./northfield.png"
 import webcraft from "./webcraft-logo.png"
 import innovation from "./innovation.jpg"
+import location from "./traffic-location.jpg";
 
 export {
   quotes,
@@ -117,5 +118,6 @@ export {
   androidlogo,
   northfield,
   webcraft,
-  innovation
+  innovation,
+  location
 };
