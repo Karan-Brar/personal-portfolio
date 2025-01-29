@@ -58,6 +58,7 @@ import northfield from "./northfield.png"
 import webcraft from "./webcraft-logo.png"
 import innovation from "./innovation.jpg"
 import location from "./traffic-location.jpg";
+import carart from "./car-art.jpg"
 
 export {
   quotes,
@@ -119,5 +120,6 @@ export {
   northfield,
   webcraft,
   innovation,
-  location
+  location,
+  carart
 };

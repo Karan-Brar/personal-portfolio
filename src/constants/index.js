@@ -18,7 +18,8 @@ import {
   northfield,
   webcraft,
   innovation,
-  location
+  location,
+  carart
 } from "../assets";
 
 import {
@@ -74,7 +75,9 @@ import {
   SiSequelize,
   SiSqlite,
   SiMaterialdesign,
-  SiLeaflet
+  SiLeaflet,
+  SiGo,
+  SiWindows
 } from "react-icons/si";
 
 import {
@@ -243,6 +246,11 @@ export const skills = [
         id: "pl-4",
         icon: SiTypescript,
         name: "TypeScript",
+      },
+      {
+        id: "pl-4",
+        icon: SiGo,
+        name: "Go",
       },
       {
         id: "pl-5",
@@ -560,6 +568,31 @@ export const projects = [
   },
   {
     id: "project-4",
+    title: "Automotive Dealership Management Application",
+    link: "https://github.com/Karan-Brar/automotive-dealership-winforms",
+    image: carart,
+    content:
+      "Made a WinForms app using C# where as user('dealership employee') one create quotes for a car wash, the sale of a vehicle and view the inventory of vehicles.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiCsharp,
+        name: "React",
+      },
+      {
+        id: "icon-2",
+        icon: SiDotnet,
+        name: "TailwindCSS",
+      },
+      {
+        id: "icon-3",
+        icon: SiWindows,
+        name: "Next.js",
+      },
+    ],
+  },
+  {
+    id: "project-5",
     title: "IceFeet",
     github: "https://github.com/Karan-Brar/sneaker-journal",
     image: sneaker,
@@ -589,7 +622,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-5",
+    id: "project-6",
     title: "To-do list REST API",
     github: "https://github.com/Karan-Brar/TodoApi-ASP.NET",
     image: todo,
@@ -614,7 +647,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-6",
+    id: "project-7",
     title: "Mercury Chatrooms",
     github: "https://github.com/Karan-Brar/Mercury-ChatRooms",
     link: "https://mercury-chatrooms.onrender.com/",
@@ -650,7 +683,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-7",
+    id: "project-8",
     title: "Android Utility App",
     github: "https://github.com/Karan-Brar/UtilityApp",
     image: androidlogo,
@@ -680,7 +713,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-8",
+    id: "project-9",
     title: "Portfolio",
     github: "https://github.com/Karan-Brar/personal-portfolio",
     link: "https://parthmittal.netlify.app/",
