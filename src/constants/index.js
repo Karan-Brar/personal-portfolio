@@ -19,7 +19,8 @@ import {
   webcraft,
   innovation,
   location,
-  carart
+  carart,
+  financeVisuals
 } from "../assets";
 
 import {
@@ -40,9 +41,6 @@ import {
   SiTailwindcss,
   SiGraphql,
   SiPython,
-  SiCplusplus,
-  SiC,
-  SiRubyonrails,
   SiJquery,
   SiVisualstudiocode,
   SiPostman,
@@ -77,7 +75,8 @@ import {
   SiMaterialdesign,
   SiLeaflet,
   SiGo,
-  SiWindows
+  SiWindows,
+  SiSpringboot
 } from "react-icons/si";
 
 import {
@@ -327,6 +326,11 @@ export const skills = [
         icon: SiBlazor,
         name: "Blazor",
       },
+      {
+        id: "f-8",
+        icon: SiSpringboot,
+        name: "Spring Boot",
+      },
     ],
   },
   {
@@ -568,8 +572,33 @@ export const projects = [
   },
   {
     id: "project-4",
+    title: "City of Winnipeg Data Dashboard",
+    github: "https://github.com/CCianfloneDev/WpgData/tree/contract-bids",
+    image: financeVisuals,
+    content:
+      "This is a .NET Blazor app that utilizes API Data from the City of Winnipeg's Financial APIs catalouge to create visualizations of this data using pie chart, bar chart and data grid components using the MudBlazor library",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiBlazor,
+        name: "Blazor",
+      },
+      {
+        id: "icon-2",
+        icon: SiDotnet,
+        name: ".NET",
+      },
+      {
+        id: "icon-3",
+        icon: SiCsharp,
+        name: "C#",
+      },
+    ],
+  },
+  {
+    id: "project-5",
     title: "Automotive Dealership Management Application",
-    link: "https://github.com/Karan-Brar/automotive-dealership-winforms",
+    github: "https://github.com/Karan-Brar/automotive-dealership-winforms",
     image: carart,
     content:
       "Made a WinForms app using C# where as user('dealership employee') one create quotes for a car wash, the sale of a vehicle and view the inventory of vehicles.",
@@ -592,7 +621,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-5",
+    id: "project-6",
     title: "IceFeet",
     github: "https://github.com/Karan-Brar/sneaker-journal",
     image: sneaker,
@@ -622,7 +651,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-6",
+    id: "project-7",
     title: "To-do list REST API",
     github: "https://github.com/Karan-Brar/TodoApi-ASP.NET",
     image: todo,
@@ -647,7 +676,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-7",
+    id: "project-8",
     title: "Mercury Chatrooms",
     github: "https://github.com/Karan-Brar/Mercury-ChatRooms",
     link: "https://mercury-chatrooms.onrender.com/",
@@ -683,7 +712,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-8",
+    id: "project-9",
     title: "Android Utility App",
     github: "https://github.com/Karan-Brar/UtilityApp",
     image: androidlogo,
@@ -713,7 +742,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-9",
+    id: "project-10",
     title: "Portfolio",
     github: "https://github.com/Karan-Brar/personal-portfolio",
     link: "https://parthmittal.netlify.app/",

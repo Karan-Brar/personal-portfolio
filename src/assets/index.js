@@ -59,6 +59,7 @@ import webcraft from "./webcraft-logo.png"
 import innovation from "./innovation.jpg"
 import location from "./traffic-location.jpg";
 import carart from "./car-art.jpg"
+import financeVisuals from "./finance-visuals.jpg"
 
 export {
   quotes,
@@ -121,5 +122,6 @@ export {
   webcraft,
   innovation,
   location,
-  carart
-};
+  carart,
+  financeVisuals
+}
